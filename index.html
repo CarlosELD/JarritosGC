@@ -3,49 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <title>Jarritos México</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #b4b8ab;
+            background-color: #F5F5DC;
+            Color: #333333;
             box-sizing: border-box;
         }
 
         header {
-            background-color: #284b63;
+            background-color: darkorange;
             color: white;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
+            font-family: sans-serif;
+            box-shadow: 0 2px 5px black;
         }
 
         nav {
-            background-color: #153243;
+            background-color: green;
             display: flex;
             justify-content: center;
+            padding: 0.5rem 0;
         }
 
         nav a {
             color: white;
-            padding: 1rem;
+            padding: 1rem 2rem;
             text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: darkorange;
+            color: rgb(39, 39, 39)
         }
 
         .auth-form {
             background-color: #fff;
-            padding: 1rem;
-            max-width: 300px;
-            margin: 1rem auto;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 1.5rem;
+            max-width: 350px;
+            margin: 2rem auto;
+            border: 2px solid darkorange;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px black;
         }
 
         form {
@@ -55,55 +63,76 @@
         .auth-form input {
             display: block;
             width: 100%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
+            padding: 0.75rem;
+            margin: 0.75rem 0;
+            border: 1px solid white;
+            border-radius: 4px;
         }
-
+        .auth-form input[type="submit"] {
+            background-color: Darkorange;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
         .main {
             display: flex;
-            padding: 1rem;
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .content {
             flex: 3;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit,minmax(300, 1fr));
+            gap: 1.5rem;
         }
 
         .card {
-            background-color: #F4f9e9;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            background-color: white;
+            border: 1px solid darkorange;
+            border-radius: 8px;
             overflow: hidden;
+            box-shadow: 0 2px 4px black;
+            transition: transform 0.3s;
         }
 
         .head-card {
             padding: 1rem;
-            background-color: #333;
+            background-color: darkorange;
             color: white;
+            font-family: sans-serif;
+            font-size: 1.2rem;
         }
 
         .cont-card {
-            padding: 1rem;
-            color: #333;
-            min-height: 2rem;
+            padding: 1.5rem;
+            min-height: 120px;
         }
 
         .sidebar {
             flex: 1;
-            padding: 1rem;
-            background-color: #eef0eb;
-            margin-left: 1rem;
-            border-radius: 5px;
+            padding: 1.5rem;
+            background-color: white;
+            margin-left: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid green;
+            box-shadow: 0 2px 4px black;
         }
-
+        .sidebar h3 {
+            color: green;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 1rem;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
